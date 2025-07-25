@@ -4,7 +4,7 @@
 
 You have the option to set the model, max token limit, temperature (creativity in choices of words), text stream, and sessions.
 
-'''
+```
 API_Chat
 ├── chat.py           # Main program
 ├── README.md
@@ -33,7 +33,7 @@ API_Chat
     │   └── python3.13/
     ├── lib64 -> lib/
     └── pyvenv.cfg
-'''
+```
 
 
 ## Download:
@@ -74,7 +74,7 @@ On Windows: <strong>$env:OPENAI_API_KEY="YOUR_API_KEY_HERE"</strong>
 
 ### Step 5: Use chat.py!
 
-The most basic way to communicate with the API now is in the form of <strong>python chat.py "Your prompt here"</strong>. See the rest of this file to use chat.py's added functionality.
+The most basic way to communicate with the API now is in the form of <strong>python chat.py "Your prompt here"</strong>. See the rest of this README to use chat.py's added functionality.
 
 
 
