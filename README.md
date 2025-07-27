@@ -4,6 +4,7 @@
 
 You have the option to set the model, max token limit, temperature (creativity in choices of words), text stream, and sessions.
 
+## Project Structure
 ```
 API_Chat
 ├── chat.py           # Main program
@@ -12,27 +13,7 @@ API_Chat
 ├── sessions/
 │   └──               # Where your chat sessions will be saved.
 └── venv/             # You won't need to deal with any of these
-    ├── bin/
-    │   ├── activate
-    │   ├── activate.csh
-    │   ├── activate.fish
-    │   ├── Activate.ps1
-    │   ├── distro
-    │   ├── httpx
-    │   ├── openai
-    │   ├── pip
-    │   ├── pip3
-    │   ├── pip3.13
-    │   ├── python -> python3
-    │   ├── python3 -> /usr/bin/python3
-    │   ├── python3.13 -> python3
-    │   └── tqdm
-    ├── include/
-    │   └── python3.13/
-    ├── lib/
-    │   └── python3.13/
-    ├── lib64 -> lib/
-    └── pyvenv.cfg
+    └── bin/
 ```
 
 
