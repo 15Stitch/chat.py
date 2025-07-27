@@ -1,8 +1,8 @@
-# ChatGPT API chat.py 
+# ChatGPT API chat.py Ver 1.1
 
 ## This simple Python program takes OpenAI's API and allows you to interact with it through the command line. 
 
-You have the option to set the model, max token limit, temperature (creativity in choices of words), text stream, and sessions.
+You have the option to set the model, max token limit, temperature (creativity in choices of words), text stream, sessions, and embedding's.
 
 ## Project Structure
 ```
@@ -16,6 +16,9 @@ API_Chat
     └── bin/
 ```
 
+## Added in Version 1.1:
+
+You now have the ability to track embedding's in your session's json file and also display the first 5 embedded values. These can be changed per prompt or in your chat.py file.
 
 ## Download:
 
@@ -105,11 +108,19 @@ chat.py file which will be the most reliable way to do it, but you can also try 
 If you want to change the temperature per prompt, I've added a feature where you can add the <strong>temp="TEMP_DESC"</strong>. Instead of adding a integer or float value like 1.3, you 
 can add a description like "silly wording" or "scientific and informative". Try experimenting with this! It likely isn't perfect, so for total reliability change the value in chat.py.
 
+### Tracking and Displaying Embedding
+
+For embedding's, you have two variables you can change: <strong>show_embedding</strong> and <strong>track_embedding</strong>. <strong>show_embedding</strong> displays the first 5 embedded 
+values in your live prompt response. <strong>track_embedding</strong> controls the tracking of embedding's in your session's json file. 
+
+<strong>NOTE:</strong> If you have track_embedding turned off but show_embedding on, you will not be able to view the embedding data because chat.py is not prompting the API for them in 
+the first place.
+
 
 ### Example usage
 
-An example using all the tags would look something like this: <strong>python chat.py session="writing" model="gpt-4o" temp="slightly poetic" max_tokens=200 "Write me a story about a 
-frog"</strong>
+An example using all the tags would look something like this: <strong>python chat.py session="writing" model="gpt-4o" temp="slightly poetic" max_tokens=200 track_embedding=True show_embedding=False 
+"Write me a story about a frog"</strong>
 
 
 
